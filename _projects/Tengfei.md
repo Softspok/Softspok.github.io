@@ -5,4 +5,4 @@ date: 2025-05-18 00:00:00 +0800
 demo_video: /assets/images/demo/demo.mp4
 ---
 
-Led a research project on intelligent agent behavior generation. Given personality traits and scene information as inputs, designed a pipeline that generates a simple activity schedule and produces 3D skeleton animations using diffusion-based generative models.
+Under the guidance of the [FDUVIS](https://fduvis.net) Lab, led a research project on agent behavior generation. The project designed a complete pipeline that takes personality traits and scene information as input, generates simple activity schedules, and produces 3D skeletal animations using diffusion-based generative models.
