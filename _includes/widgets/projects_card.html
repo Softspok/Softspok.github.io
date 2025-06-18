@@ -1,22 +1,25 @@
-{% assign projects = site.projects | sort: "date" | reverse %}
+{% assign projects = site.projects | sort: "date" | reverse %} {% if projects
+and projects.size > 0 %}
 <div class="my-3 p-0 bg-white shadow-sm rounded-xl">
   <h6 class="border-bottom border-gray p-3 mb-0">
     <i class="fas fa-code"></i> Recent Projects
-    <a href="{{ 'projects' | relative_url }}"
-      >(view all <i class="fas fa-angle-double-right"></i>)</a
-    >
   </h6>
   {% for project in projects limit:include.limit %}
   <div class="p-3 border-bottom border-gray">
-    <h6 class="mb-1">
-      <a href="{{ project.url | relative_url }}" class="text-decoration-none"
-        >{{ project.title }}</a
-      >
-    </h6>
+    <h6 class="mb-1">{{ project.title }}</h6>
     <div class="small text-muted mb-2">
       {{ project.type }} • {{ project.date | date: "%B %Y" }}
     </div>
-    <p class="mb-0 small">{{ project.content | truncate: 150 }}</p>
+    {% if project.demo_video %}
+    <div class="mt-2">
+      <button
+        class="btn btn-outline-primary btn-sm"
+        onclick="playDemo('{{ project.demo_video | relative_url }}', '{{ project.title }}')"
+      >
+        <i class="fas fa-play"></i> Demo
+      </button>
+    </div>
+    {% endif %}
   </div>
   {% endfor %}
   <h6 class="d-block p-3 mt-0 text-right">
@@ -25,3 +28,4 @@
     ></a>
   </h6>
 </div>
+{% endif %}

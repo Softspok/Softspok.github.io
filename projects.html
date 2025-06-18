@@ -9,13 +9,25 @@ container_class: container-xl
 
 <div class="row">
   {% for project in projects %}
-  <div class="col-md-6 col-lg-4 mb-4">
+  <div class="col-md-6 col-lg-6 mb-4">
     <div class="card border-0 shadow-sm bg-white h-100">
-      <div class="card-body">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">{{ project.title }}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{ project.type }}</h6>
-        <p class="card-text">{{ project.content }}</p>
-        <small class="text-muted">{{ project.date | date: "%B %Y" }}</small>
+        <h6 class="card-subtitle mb-3 text-muted">{{ project.type }}</h6>
+        <div class="card-text mb-3">{{ project.content }}</div>
+        {% if project.demo_video %}
+        <div class="mb-3">
+          <button
+            class="btn btn-primary btn-sm"
+            onclick="playDemo('{{ project.demo_video | relative_url }}', '{{ project.title }}')"
+          >
+            <i class="fas fa-play"></i> View Demo
+          </button>
+        </div>
+        {% endif %}
+        <div class="mt-auto">
+          <small class="text-muted">{{ project.date | date: "%B %Y" }}</small>
+        </div>
       </div>
     </div>
   </div>
