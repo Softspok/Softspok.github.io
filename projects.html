@@ -1,0 +1,23 @@
+---
+layout: default
+title: Projects
+navbar_title: Projects
+container_class: container-xl
+---
+
+{% assign projects = site.projects | sort: "date" | reverse %}
+
+<div class="row">
+  {% for project in projects %}
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="card border-0 shadow-sm bg-white h-100">
+      <div class="card-body">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ project.type }}</h6>
+        <p class="card-text">{{ project.content }}</p>
+        <small class="text-muted">{{ project.date | date: "%B %Y" }}</small>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

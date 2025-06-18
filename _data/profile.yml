@@ -1,6 +1,6 @@
 primary_name: "Yao Yuxin"
 secondary_name: ""
-navbar_name: "Yao Yuxin"
+navbar_name: "Hello, World!"
 
 positions:
   - name: Fudan University - Software School - 26
@@ -19,7 +19,10 @@ github: Softspok
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am an undergraduate student at Fudan University. I have taken courses in Artificial Intelligence, Computer Vision, and Machine Learning. My research interests lie in human-computer interaction and multi-agent systems.
+    I am currently pursuing my undergraduate studies at Fudan University, where I have completed courses in Artificial Intelligence, Computer Vision, and Machine Learning. 
+  </p>
+  <p>
+    My research interests lie in human-computer interaction and multi-agent systems.
   </p>
 
 portrait_url: /assets/images/photos/me.JPG
@@ -28,7 +31,6 @@ portrait_url: /assets/images/photos/me.JPG
 
 education:
   - name: Fudan University
-    logo: /assets/images/badges/fudan.png
     position: >-
       College of Computer Science and Artificial Intelligence & Software School <br/>
       Undergraduate
