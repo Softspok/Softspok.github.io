@@ -39,7 +39,12 @@ education:
     date: Sep. 2022 - present
 
 experience:
+  - name: Pinestone Assets
+    logo: /assets/images/badges/pinestone.png
+    position: Strategy Research Analyst Intern
+    date: Jun. 2025 - present
   - name: FDUVIS Lab, Fudan University
+    logo: /assets/images/badges/fduvis.png
     position: Research Intern
     date: Jan. 2025 - Mar. 2025
 
