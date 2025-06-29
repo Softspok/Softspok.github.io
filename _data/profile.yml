@@ -22,7 +22,7 @@ short_bio: >-
     Currently pursuing my undergraduate studies at Fudan University.
   </p>
   <p>
-    Research interests: human-computer interaction, multi-agent systems.
+    Research interests: human-computer interaction, multi-agent systems, accessibility.
   </p>
 
 portrait_url: /assets/images/photos/me.JPG
@@ -38,11 +38,10 @@ education:
       Undergraduate
     date: Sep. 2022 - present
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+  - name: FDUVIS Lab, Fudan University
+    position: Research Intern
+    date: Jan. 2025 - Mar. 2025
 
 awards:
   - name: Fudan University Outstanding Student Scholarship (2023-2024)
